@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-  root "dashboard#index"
+  root 'home#index'
+
+  get "/signup", to: "users#new"
+  get "/dashboard", to: "dashboard#index"
 end

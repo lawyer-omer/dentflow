@@ -11,12 +11,8 @@
   </head>
 
   <body>
-    <div class="flex flex-nowrap">
-      <%= render 'dashboard/sidebar'%>
-      <div class="w-4/5">
-        <%= render 'dashboard/navbar'%>
-        <%= yield %>
-      </div>
-    </div>
+    <main>
+      <%= yield %>
+    </main>
   </body>
 </html>

@@ -11,12 +11,11 @@
   </head>
 
   <body>
-    <div class="flex flex-nowrap">
-      <%= render 'dashboard/sidebar'%>
-      <div class="w-4/5">
-        <%= render 'dashboard/navbar'%>
-        <%= yield %>
-      </div>
-    </div>
+    <% flash.each do |message_type, message| %>
+      <div class="<%= message_type %>"><%= message %></div>
+    <% end %>
+    <main>
+      <%= yield %>
+    </main>
   </body>
 </html>

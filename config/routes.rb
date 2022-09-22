@@ -3,4 +3,6 @@ Rails.application.routes.draw do
 
   get "/signup", to: "users#new"
   get "/dashboard", to: "dashboard#index"
+
+  resources :users
 end

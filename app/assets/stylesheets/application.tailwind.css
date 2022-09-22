@@ -11,3 +11,47 @@
 }
 
 */
+
+.btn--gradient, .form--submit {
+  --tw-gradient-from: #ce00d2;
+  --tw-gradient-to: rgba(206,0,210,0);
+  --tw-gradient-stops: var(--tw-gradient-from),var(--tw-gradient-to);
+  --tw-gradient-to: #9ca3af;
+  background-image: linear-gradient(to right,var(--tw-gradient-stops));
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  padding: 1rem 2.5rem;
+}
+
+.btn--gradient, .btn--transaction-type, .form--submit {
+  --tw-text-opacity: 1;
+  border-radius: 9999px;
+  color: rgb(255 255 255/var(--tw-text-opacity));
+  font-weight: 700;
+}
+
+.form--submit {
+  cursor: pointer;
+}
+
+
+.form--input {
+  --tw-border-opacity: 1;
+  border-color: rgb(156 163 175/var(--tw-border-opacity));
+  border-radius: 9999px;
+  border-width: 2px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  height: 4rem;
+  line-height: 1.75rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.form--label {
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39/var(--tw-text-opacity));
+  font-size: 1.875rem;
+  font-weight: 700;
+  line-height: 2.25rem;
+}
